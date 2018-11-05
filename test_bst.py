@@ -17,6 +17,24 @@ class TestBinarySearchTree(unittest.TestCase):
 		except NameError:
 			self.fail("Could not instantiate BinarySearchtree")
 
+	def test_has_children(self):
+		'''
+		BinarySearchTree has left and right children
+		'''
+		bst = BinarySearchTree()
+		children = None
+		self.assertTrue(bst, bst.children())
+
+	def test_has_insert(self):
+
+		'''
+		Test to see if inarySearchTree has insert method
+		'''
+		bst = BinarySearchTree()
+		self.assertTrue(bst, bst.insert())
+
+
+
 
 if __name__ == '__main__':
 	unittes.main()
